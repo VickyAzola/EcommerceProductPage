@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Kumbh Sans Variable', sans-serif;
+  min-height: 100vh;
+}
+
