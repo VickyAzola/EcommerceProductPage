@@ -76,9 +76,9 @@ function Navbar(props) {
                     fill="#69707D" fillRule="nonzero"/>
                 </svg>
             </button>
-            <a  aria-label='User profile'
+            <a 
                 className='border-2 rounded-full border-white hover:cursor-pointer hover:border-2 hover:border-Orange'>
-                <img className='w-7 h-7 lg:w-10 lg:h-10' src={Profile} alt="" />
+                <img className='w-7 h-7 lg:w-10 lg:h-10' src={Profile} alt="User profile" />
             </a>
         </div>
 
@@ -96,7 +96,7 @@ function Navbar(props) {
                     <div>
                         <div className='border-t pt-6 pb-5 lg:py-4 flex items-center justify-between'>
                             <div className='flex items-center gap-x-3'>
-                                <img className='w-14 h-14 bg-black rounded' src='/images/image-product-1.jpg' alt="" />
+                                <img className='w-14 h-14 bg-black rounded' src='/images/image-product-1.jpg' alt="Product Image" />
                                 <div className='text-DarkGrayishBlue'>
                                     <p>{props.itemName} </p>
                                     <p>{`$${props.discountPrice}.00`} x {props.cuantity} <span className='font-bold'> {props.total} </span></p>
