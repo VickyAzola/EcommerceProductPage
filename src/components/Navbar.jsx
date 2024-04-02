@@ -52,7 +52,7 @@ function Navbar(props) {
             <ul className='flex items-center md:gap-x-4 lg:gap-x-8 h-full'>
                 {navItems.map((item, index) => (
                 <li key={index}
-                className='hover:cursor-pointer border-b-2 border-b-white hover:border-b-2 hover:border-b-Orange py-7'>
+                className='hover:cursor-pointer border-b-2 border-b-white hover:border-b-2 hover:border-b-Orange py-8'>
                     <a 
                         href=''
                         className='text-DarkGrayishBlue h-full'>

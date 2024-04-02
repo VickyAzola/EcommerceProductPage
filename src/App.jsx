@@ -110,8 +110,8 @@ function App() {
       />
     </header>
 
-      <main className="md:px-20 md:pt-20 lg:pt-0 lg:px-28 pb-14 lg:pb-0 lg:flex lg:justify-center lg:items-center lg:gap-x-2">
-        {windowWidth < '1024' 
+      <main className="md:px-20 md:pt-20 lg:pt-4 lg:px-28 pb-14 xl:max-w-[80rem] xl:mx-auto lg:pb-0 lg:flex lg:justify-center lg:items-center lg:gap-x-2">
+        {windowWidth < '1025' 
         ?
           <CarrucelMobile />
         :
