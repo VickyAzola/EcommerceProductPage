@@ -38,7 +38,8 @@ function Lightbox(props) {
         <section className="flex flex-col pt-6 items-center min-h-screen w-screen justify-center bg-black/70">
 
             <div className="relative h-[26rem] w-[26rem] xl:w-[30rem] xl:h-[30rem] mb-3">
-                <button 
+                <button
+                    aria-label="Click to close lightbox"
                     onClick={props.showLightbox} 
                     className="absolute right-0 top-[-8%] z-20"
                 >
@@ -48,7 +49,8 @@ function Lightbox(props) {
                     </svg>
                 </button>
 
-                <button 
+                <button
+                    aria-label="Click to see previous image"
                     onClick={handlePrevImg} 
                     className='group absolute left-[-5%] my-auto inset-y-0 grid place-content-center bg-white h-10 w-10 rounded-full'
                 >
@@ -63,12 +65,13 @@ function Lightbox(props) {
                         <img 
                             className='rounded-2xl object-fit h-full w-full' 
                             src={item.url}
-                            alt="" 
+                            alt="product" 
                         />}
                     </div>
                 ))}
 
-                <button 
+                <button
+                    aria-label="Click to see next image"
                     onClick={handleNextImg} 
                     className='group absolute right-[-5%] my-auto inset-y-0 grid place-content-center bg-white h-10 w-10 rounded-full'
                 >
@@ -80,7 +83,8 @@ function Lightbox(props) {
 
             <div className="flex justify-between gap-x-4 ">
                 {images.map((item, index) => (
-                    <button  
+                    <button
+                        aria-label="Click to see this image on display"
                         key={index} 
                         onClick={() => handleClick(index)} 
                         className={`${index == current ? styles.activeButton : '' }`}
@@ -88,7 +92,7 @@ function Lightbox(props) {
                         <img 
                             className={`${styles.base} ${index == current ? 'opacity-60' : '' }`}
                             src={item.url}
-                            alt="" 
+                            alt="images" 
                         />
                     </button>
                 ))}
