@@ -166,7 +166,6 @@ function App() {
           </section>
           <Credits />
         </div>
-        
       </main>
     </>
   )

@@ -59,7 +59,8 @@ function Lightbox(props) {
 
                 {images.map((item, index) => (
                     <div key={index}>
-                        {index === current && <img 
+                        {index === current && 
+                        <img 
                             className='rounded-2xl object-fit h-full w-full' 
                             src={item.url}
                             alt="" 

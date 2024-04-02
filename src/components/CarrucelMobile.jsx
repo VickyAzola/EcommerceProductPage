@@ -32,7 +32,8 @@ function CarrucelMobile() {
             </button>
             {images.map((item, index) => (
                 <div key={index}>
-                    {index === current && <img 
+                    {index === current && 
+                    <img 
                         className='object-cover h-[19rem] md:rounded-xl md:h-[30rem] w-full transition-all' 
                         src={item.url}
                         alt="" 
