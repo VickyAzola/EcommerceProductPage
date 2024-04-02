@@ -138,16 +138,19 @@ function App() {
           </section>
           
           <section className="px-4 md:px-0 md:flex md:items-center md:gap-x-3" >
+            
             <div className="md:w-2/3 flex items-center justify-between bg-LightGrayishBlue mt-5 mb-3 rounded-lg">
-              <button className="group p-5" onClick={decrease} >
+              <button className="group p-5" onClick={decrease} aria-label="decrease items by 1">
                 <svg className='fill-[#FF7E1B] group-hover:fill-Orange/70'
                   width="12" height="4" xmlns="http://www.w3.org/2000/svg"><defs>
                   <path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs>
                   <use fillRule="nonzero" xlinkHref="#a"/>
                 </svg>
               </button>
+              
               <p className="font-bold">{itemCount} </p>
-              <button className="group p-5" onClick={increase} >
+              
+              <button className="group p-5" onClick={increase} aria-label="increase items by 1">
                 <svg className='fill-[#FF7E1B] group-hover:fill-Orange/70'
                   width="12" height="12" xmlns="http://www.w3.org/2000/svg"><defs>
                   <path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs>
