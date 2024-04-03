@@ -22,6 +22,14 @@ function App() {
     }
   }, [])
 
+  //state for animation
+  const [animation, setAnimation] = useState(false)
+  //effectfor animation duration
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimation(false)
+  }, 2000) }, [animation])
+
   //state to count the cuantity of items
   const [itemCount, setItemCount] = useState(0)
    //state to set the final price ofter adding items
@@ -48,7 +56,6 @@ function App() {
   //if it starts at 0 add 1 else itemCount
   const addToCart = () => {
     setCart(data)
-
     if (itemCount === 0) {
       setItemCount(1)
     }
@@ -59,6 +66,7 @@ function App() {
       let total = '$' + finalPrice * (itemCount) + '.00'
       setTotalProducts(total)
     }
+    setAnimation(true)
   }
 
   //increase items and set the final price when a produc is added
@@ -66,6 +74,7 @@ function App() {
     setItemCount(prev => prev + 1)
     let total = '$' + finalPrice * (itemCount + 1) + '.00'
     setTotalProducts(total)
+    setAnimation(true)
   }
 
   //decrease items (not less than 0) and set the final price when a produc is removed
@@ -79,6 +88,7 @@ function App() {
     setItemCount(prev => prev - 1)
     let total = '$' + finalPrice * (itemCount - 1) + '.00'
     setTotalProducts(total)
+    setAnimation(true)
   }
 
   const handleDelete = () => {
@@ -107,6 +117,7 @@ function App() {
           total={itemCount > 1 ? totalProducts : ''}
           handleDelete={handleDelete}
           isCartEmpty={cart <= 0}
+          animation={animation}
       />
     </header>
 
