@@ -141,10 +141,10 @@ function App() {
           </section>
           
           <section className="flex md:my-2 md:flex-col md:items-start justify-between items-center px-4 md:px-0">
-            <p className="flex items-center gap-x-4">
+            <h2 className="flex items-center gap-x-4">
               <span className="text-[1.7rem] font-bold text-VeryDarkBlue">{`$${data.discountPrice}.00`} </span>
               <span className="text-Orange px-1.5 py-[.2rem] bg-PaleOrange rounded text-xs font-bold"> 50%</span>
-            </p>
+            </h2>
             <del className="text-GrayishBlue font-bold text-sm">$ {data.realPrice} </del>
           </section>
           
@@ -159,7 +159,7 @@ function App() {
                 </svg>
               </button>
               
-              <p className="font-bold">{itemCount} </p>
+              <h3 className="font-bold">{itemCount} </h3>
               
               <button className="group p-5" onClick={increase} aria-label="increase items by 1">
                 <svg className='fill-[#FF7E1B] group-hover:fill-Orange/70'
