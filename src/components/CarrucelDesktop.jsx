@@ -22,7 +22,7 @@ function CarrucelDesktop(props) {
 
     return (
     <>
-        <section className="flex flex-col items-center">
+        <div className="flex flex-col items-center">
 
             <div className="h-[26rem] w-[26rem] mb-5">
                 <button onClick={props.showLightbox} aria-label="Click to show images on a lightbox" >
@@ -51,7 +51,7 @@ function CarrucelDesktop(props) {
                 ))}
             </div>
             
-        </section>
+        </div>
     </>
     )
 }
